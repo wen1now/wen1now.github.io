@@ -1,0 +1,23 @@
+24/03/17
+-Found a few bugs with the old mode, esp. with highscores
+-Added block probability, and more modes
+-Basically added tonnes of gamemodes
+-Anticipating a v1.2 release on 25th
+
+23/03/17
+-Added readme.txt file
+
+22/03/17 v1.1
+-Got highscores
+-Added gamemodes
+-Not many bugs found as of yet
+
+21/03/17
+-Basically added gamemodes
+
+20/03/17 v1.0 is out!
+-Main game working
+-Basically everything works
+-There is a bug with the red block as it sometimes comes out of the next block container
+
+16/03/17 Finally got started on the game
