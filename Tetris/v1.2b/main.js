@@ -116,7 +116,9 @@ function checkKey(e) {
         e = new Object();
         e.keyCode = 'paused';
     }
-
+    if (e.keyCode == '32') {
+        l.fulldown();
+    }
     if (e.keyCode == '38') {
         // up arrow: rotate
         l.rot();
@@ -168,6 +170,13 @@ function checkKey(e) {
 }
 
 //Moving the block down
+
+l.fulldown = function(){
+    x = l.numblocks;
+    while (x == l.numblocks){
+        l.godown();
+    }
+}
 
 l.godown = function(){
     canmove = true;
