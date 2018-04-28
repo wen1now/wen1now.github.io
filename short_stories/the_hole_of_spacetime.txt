@@ -5,7 +5,7 @@ Professor Christopher Little rubbed the bridge of his nose, hugged his tattered 
 "You do understand the basics of gravity, yes?"
 
 Dr. Etheridge Tall, the new assistant to the eminent professor -- who sat across from him over the mahogany desk -- unconsciously ran a hand through his wavy black hair and replied impatiently,
-"If you're speaking of the universal law of gravitation then yes, I am familiar"
+"If you're speaking of the universal law of gravitation then yes, I am familiar."
 
 "Then you know that the universe is, fundamentally, much like a rubber sheet, correct? Massive objects distort this sheet."
 
@@ -18,7 +18,7 @@ The professor admitted,
 Leaning forward at this, Tall took a stab in the dark,
 "I suppose there would be, since anything above the Plank energy -"
 
-"- concentrated extremely compactly would burn a hole in this fabric," the professor finished. "And that is precisely what I have been doing for these past few months. I have been collecting energy to focus at a single point. According to my calculations, there should be enough to burn a slight hole in the very fabric of space-time"
+"- concentrated extremely compactly would burn a hole in this fabric," the professor finished. "And that is precisely what I have been doing for these past few months. I have been collecting energy to focus at a single point. According to my calculations, there should be enough to burn a slight hole in the very fabric of space-time."
 
 Tall asked reverently,
 "And what do we expect to find on the other side?"
@@ -86,12 +86,12 @@ As Tall raced to turn on the air supply that would saturate the inner chamber wi
 
 Something in his voice made the professor pause. He turned around, glancing briefly at the readouts before replying in the affirmative.
 
-"Then could we not install mirrors to simply reflect the energy outwards - away from this asteroid entirely?"
+"Then could we not install mirrors to simply reflect the energy outwards -- away from this asteroid entirely?"
 
 The professor wiped a hand across his brow. "That.. that seems reasonable. But where are we going to get the mirrors from?"
 
 Tall paused -- that was something that he hadn't considered. As the thought struck him, Professor Little was already voicing it:
-"The energy crystals - they are 100% reflective under the right conditions!"
+"The energy crystals -- they are 100% reflective under the right conditions!"
 
 They got to work at once. And with that, the asteroid became a perpetual power source -- unlimited energy being radiated from it in an ultra-intense beam of gamma rays, reflected out through an aperture.
 
