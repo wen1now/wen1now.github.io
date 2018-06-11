@@ -1,0 +1,22 @@
+.drag {
+  width: 300px;
+  height: 100px;
+  min-height: 6.5em;
+  margin: 10px;
+  border-radius: 0.75em;
+  border: 2px black solid;
+  background: #fff;
+  position: absolute;
+
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.topbar {
+  top: 0px;
+  float: left;
+  height: 26px;
+  width: 100%;
+  border-bottom: 2px black solid;
+  cursor: move;
+}
