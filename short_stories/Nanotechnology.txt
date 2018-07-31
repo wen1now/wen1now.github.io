@@ -1,0 +1,89 @@
+"By 2100, our destiny is to become like the gods we once worshipped and feared. But our tools will not be magic wands and potions but the science of computers, nanotechnology, artificial intelligence, biotechnology, and most of all, the quantum theory." - Michio Kaku, Physics of the future
+
+
+[3:22 AM 26/08/2043]
+
+Sylvester Grey of the International Nanotechnology Research Institute glanced up at the clock on the wall and wondered, for the third time this week, where all the time had gone. And it was only Tuesday. No, wait, Wednesday. His partner, Robert Archer, was long asleep with his head on the desk. What was he still doing up this late? He -- no they -- were so close to engineering the world's first working nanobot. There was no way he was going to rest until that was done. His last thought before he dozed off in his chair was that Robert would have a bad case of sore muscles when he woke up.
+
+[12:40 AM 29/08/2043]
+
+They had finally done it! They had created the world's first nanobot - a robot that was built atom by atom. Robert and Sylvester watched the video screen as the microscopic robot swam in the fluid. That meant the engineering technology was successful, able to create some kind of machine. Now they only needed to tweak the working design to improve functionality of the robots.
+
+[5:17 AM 16/09/2043]
+
+Sylvester worked furiously under the dawnlight, trying to finish off the latest 'upgrades' to his machines before Robert awoke. Logging his changes in his electronic journal, he gave his latest plans a once-over. After a few more minutes of fiddling around, he noticed Robert yawning. He locked the secret panel on the side of the computer before signing out and pretending to be asleep. He heard Robert rustling some printouts before he came over to wake Sylvester up.
+
+[4:54 AM 19/09/2043]
+
+Robert awoke, in the temporary bed he'd intelligently brought into the lab. For one of the world's supposedly leading scientists, it could take a while for him to catch on to obvious ideas. Deciding that it was still too cold for him to rise, he closed his eyes again, ready to sleep until sunrise -- just before he realised Sylvester was still awake. He almost called out to Sylvester when he noticed the design on Sylvester's screen. It definitely wasn't something he'd seen before. He continued watching as Sylvester made some adjustments to the model. Robert tucked the information away before sleep pulled him under.
+
+[4:35 PM 01/10/2043]
+
+This was one of the rare occasions when Sylvester was away from the lab. Off to the supermarket, probably. Of course, scientists were still people and needed food to eat, and it was Sylvester's turn to buy the food. Even though there were delivery drones these days, Sylvester probably decided he needed the exercise. Anyway, it was the perfect time for Robert to take a snoop around. Being no computer whiz, he couldn't work out where Sylvester had hidden those files. Unfortunately this meant that there was no way Robert could get into Sylvester's files.
+
+[7:28 PM 03/10/2043]
+
+Sylvester knew something was wrong the moment he logged back into his computer. Somebody had moved his screen from where he preferred it. On looking through the system event log, he noticed the last power-on was at precisely 4:37. And only Robert had the keys. How curious. Perhaps Robert needed to be accounted for in his schemes.
+
+[4:17 PM 31/10/2043]
+
+This was the next opportunity Robert had to investigate Sylvester's computer behaviour, and he was not about to waste it. He'd been researching articles on hiding things in computers for the past few weeks and he was prepared to investigate further into Sylvester's models. Oddly Sylvester had been more secretive than usual this month, relocating his computer so that the screen was only visible from the directly in front. Some fancy technology or whatever. Although Sylvester claimed it was to be more ergonomic, Robert wasn't buying it. He sat down on the seat and powered up the computer. There was no way he could get through the retina scanner, but he didn't need to -- with his newfound knowledge, he flipped open an alternative flash drive. It was simple really -- all you had to do was reprogram the computer to boot from this hard drive.
+
+[4:21 PM 31/10/2043]
+
+He got to work immediately, opening the main compartment of the computer and inserting the drive. Within moments the computer's BIOS was open. He went to the relevant setting and
+>>> Please enter your password:
+Huh? That was strange. He didn't recall that happening before. Of course, he'd never tried hacking a computer before, but it was still a bit weird.
+>>> Please enter your password: password
+He hit enter and was greeted with an ACCESS DENIED screen. Ugh. He jerked the drive out and was about to close the panel when he noticed some wires. Wires leading not into the main disk, but rather into a side panel. Interesting.
+
+[4:43 PM 31/10/2043]
+
+After finally scrounging up a screwdriver, he set to work on opening the locked section. Wrestling with the steel nails led to a POP.. and he was in! It was a USB stick. He grabbed the drive and plugged it into his laptop. Unfortunately the files on the USB were locked. He sighed and, after copying the encrypted contents over, placed the USB back (of course he then closed the panel -- Robert wasn't that dumb). He hadn't found anything, and he had no inkling of what Sylvester's plans were. What a disaster.
+
+[6:51 PM 31/10/2043]
+
+Sylvester was back again and working furiously. He caught Robert casting suspicious sideways glances at him. Of course he wasn't working on his secret project. That would be dumb.
+
+[12:53 AM 1/11/2043]
+
+Robert was sleeping like a baby thanks to Sylvester's sleeping pills he'd slipped into Robert's meal. Sylvester had at least the whole night and day to himself. He polished off his design, produced them and got ready to dispatch. Just in case, he tagged Robert before setting off.
+
+[6:58 AM 02/11/2043]
+
+Robert woke up to the knocking of someone at the door. He went to open it -- it was the janitor. That was odd. The janitor was only supposed to come on Mondays. He asked the janitor as much and she replied,
+"It is Monday, isn't it?"
+He checked his phone -- and indeed it was Monday. Very odd. He thought back -- the last thing he remembered was eating dinner. The dinner Sylvester had bought. Then he noticed that Sylvester was not sleeping soundlessly at his desk.
+
+[7:22 AM 02/11/2043]
+
+Sylvester hummed as he stepped off his plane. Timing was everything. That was his mantra now -- he thought that to himself as he got ready to meet the Prime Minister of Canada.
+
+[8:03 AM 02/11/2043]
+
+The janitor had left and Robert was sure something was amiss. Sylvester had taken the USB with him. He flicked out his copy and continued trying to break the encryption.
+
+[2:12 PM 03/11/2043]
+
+Sylvester was still out, and Robert still didn't know how to break the encryption on the USB. He had the TV on in the background, blaring the news in case anything suspiciously remniscient of nanobots turned up. He had the USB plugged into his laptop already. Such was his concentration, that he failed to notice the Canadian Prime Minister making his campaign speech. With Sylvester fleetingly in the background.
+
+[12:53 PM 14/11/2043]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
