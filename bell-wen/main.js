@@ -16,7 +16,7 @@ function outputstring(){
     if (y==1){z=mf}
     if (y==2){z=tw}
     if (y==3){z=tw}
-    if (y==4){z=special1}
+    if (y==4){z=thur}
     if (y==5){z=mf}
     for (var i in z){
         k=new Date(z[i]+" "+parseInt(x.getMonth()+1)+"/"+x.getDate()+"/"+x.getFullYear());
