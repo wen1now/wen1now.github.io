@@ -1,29 +1,54 @@
 function outputstring(){
     var x=new Date();
     x.setTime(x.getTime()-v*500);
-    if ((x.getHours()>=16)||((x.getHours()>=15)&&(x.getMinutes()>=10))){
-        return ["School has finished","Finished"]
-    }
     var y=x.getDay();
-    if ((y==0)||(y==6)){
-        if (y==0){t="Sun"}else{t="sat"}
-        return ["No school today",t]
+    localStorage.setItem("clockday",String(today));
+    localStorage.setItem("clockbell",String(bellday));
+    belltimes = {
+        tw:["8:25","8:30","8:42","8:46","9:27","9:31","10:12","10:37","10:41","11:22","11:26","12:07","12:11","12:51","13:11","13:31","13:35","14:15","14:19","14:59","15:03","15:10"],
+        mf:["8:25","8:30","8:42","8:46","9:34","9:38","10:26","10:51","10:55","11:43","11:47","12:35","12:55","13:15","13:19","14:07","14:11","14:59","15:03","15:10"],
+        th:["8:25","8:30","8:42","8:46","9:30","9:34","10:18","10:43","10:47","11:30","11:34","12:17","12:21","12:51","13:11","13:31","13:35","14:15","14:19","14:59","15:03","15:10"],
+        special1:["8:25","8:30","8:38","8:40","9:16","9:17","9:53","9:54","10:30","10:55","11:00","11:36","11:37","12:13","12:14","12:50","13:10","13:30","13:35","15:05"]
     }
-    tw=["8:25","8:30","8:42","8:46","9:27","9:31","10:12","10:37","10:41","11:22","11:26","12:07","12:11","12:51","13:11","13:31","13:35","14:15","14:19","14:59","15:03","15:10"];
-    mf=["8:25","8:30","8:42","8:46","9:34","9:38","10:26","10:51","10:55","11:43","11:47","12:35","12:55","13:15","13:19","14:07","14:11","14:59","15:03","15:10"];
-    thur=["8:25","8:30","8:42","8:46","9:30","9:34","10:18","10:43","10:47","11:30","11:34","12:17","12:21","12:51","13:11","13:31","13:35","14:15","14:19","14:59","15:03","15:10"];
-    special1=["8:25","8:30","8:38","8:40","9:16","9:17","9:53","9:54","10:30","10:55","11:00","11:36","11:37","12:13","12:14","12:50","13:10","13:30","13:35","15:05"]
-    if (y==1){z=mf}
-    if (y==2){z=tw}
-    if (y==3){z=tw}
-    if (y==4){z=thur}
-    if (y==5){z=tw}
+    if (y!=today){
+        setup();
+    }
+    var radios = document.getElementsByName('times')
+    for (var i = 0, length = radios.length; i < length; i++){
+        if (radios[i].checked){
+            bellday = radios[i].id
+            break
+        }
+    }
+    if (bellday == "ss"){return ["No bells today","n/a"]}
+    var z = belltimes[bellday]
     for (var i in z){
         k=new Date(z[i]+" "+parseInt(x.getMonth()+1)+"/"+x.getDate()+"/"+x.getFullYear());
         if (x.getTime()<k.getTime()){
             return [format(k.getTime()-x.getTime()),format(k.getTime()-x.getTime())]
         }
     }
+    return ["School has finished","Finished"]
+}
+
+function setRad(id){
+    document.getElementById(id).checked = true;
+}
+
+var today = null;
+var bellday = null;
+function setup(){
+    var x=new Date();
+    x.setTime(x.getTime()-v*500);
+    today=x.getDay();
+    if (today==0){bellday='ss'}
+    if (today==1){bellday='mf'}
+    if (today==2){bellday='tw'}
+    if (today==3){bellday='tw'}
+    if (today==4){bellday='th'}
+    if (today==5){bellday='mf'}
+    if (today==6){bellday='ss'}
+    setRad(bellday);
 }
 
 function format(msec){
@@ -41,8 +66,9 @@ function format(msec){
 }
 
 function output(){
-    document.getElementById("timeleftbox").innerHTML=outputstring()[0];
-    document.title="Time left: "+outputstring()[1];
+    var x=outputstring()
+    document.getElementById("timeleftbox").innerHTML=x[0];
+    document.title="Time left: "+x[1];
 }
 
 s=document.getElementById("slider");
@@ -59,5 +85,13 @@ s.oninput = function(){
 }
 s.oninput()
 
+radiobuttonsetup = function(){
+    if (localStorage.getItem("clockday")){today=parseInt(localStorage.getItem("clockday"))}
+    if (localStorage.getItem("clockbell")){bellday=localStorage.getItem("clockbell")}
+    setRad(bellday)
+}
+
+setup();
+radiobuttonsetup();
 output();
 var dostuff=setInterval(output,250)
