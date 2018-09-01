@@ -1,0 +1,15 @@
+body {
+	background-color: #ddd;
+	font-family: sans-serif;
+}
+
+.answer{
+    background-color:black;
+    display:inline-block;
+    width:100px;
+    text-align: center;
+}
+/*
+.answer:hover {
+	color: white;
+}*/
