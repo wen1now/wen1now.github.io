@@ -9,6 +9,25 @@ body {
     width:100px;
     text-align: center;
 }
+
+.round {
+	font-size: 30px;
+	margin-left: 30px;
+
+}
+
+.points {
+	font-weight: 900;
+	font-size: 15px;
+	color: #393;
+	font-family: monospace;
+	white-space: pre;
+}
+
+.points:hover {
+	color: blue;
+	cursor: pointer;
+}
 /*
 .answer:hover {
 	color: white;

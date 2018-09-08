@@ -1,0 +1,10 @@
+[ 5 points] What are the last five digits of the smallest number with exactly 2018 factors (a factor is a positive integer divisor of a number)?
+
+The Fibonacci numbers are defined by
+\[F_1 = 1,F_2=2,F_{n+2}=F_{n+1}+F_n\]
+[15 points] What is the smallest positive integer n such that $F_n$, the nth fibonacci number, has 2,0,1,8 as the second, third, fourth and fifth digits?
+[25 points] What is the smallest positive integer n such that $F_n$, the nth fibonacci number, has 2,0,1,8,2,0,1,8 as the second through to nineth digits?
+
+n! (n factorial) is defined recursively as \(0!=1\) and \(n!=(n-1)!\times n\) for $n\geq1$. The number of trailing zeros in a decimal number is the number of zeros with no non-zero digits following it; for example \(13!=6227020800\) has exactly 2 trailing zeros as the last two digits are 0 but the third-last is not. It is possible for n! to have 1 trailing zero; for example, \(7!=5040\) has exactly one trailing zero. It is also possible for n! to have 10, 100, 1000 trailing zeros.
+[10 points] What is the exponent, k, of the smallest power of ten such that n! never has exactly \(10^k\) trailing zeros?
+[35 points] What is the exponent, k>2018 , of the smallest power of ten such that n! never has exactly \(10^k\) trailing zeros?
