@@ -28,6 +28,16 @@ body {
 	color: blue;
 	cursor: pointer;
 }
+
+.back {
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.back:focus {
+	color: purple;
+}
 /*
 .answer:hover {
 	color: white;
