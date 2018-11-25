@@ -32,7 +32,7 @@ drawScore = function(){
 
 drawlevel_ = function(index){
 	level_index = parseInt(index);
-	loadlevel(levels[i].level);
+	loadlevel(levels[level_index].level);
 	document.getElementById("information").innerHTML = "Level "+(index+1);
 	document.getElementById("sizeincrease").style.visibility = "visible";
 	document.getElementById("sizedecrease").style.visibility = "visible";
