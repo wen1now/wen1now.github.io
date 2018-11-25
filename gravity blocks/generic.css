@@ -1,0 +1,162 @@
+body {
+    background-color: #66a;
+    font-family: Arial;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+p {
+    width: 600px;
+}
+
+.noblue {
+    color: black;
+    font-style: normal;
+}
+
+#maintitle {
+    font-size: 100px;
+}
+
+#thanksto {
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    margin: 10px;
+}
+
+#game {
+    position: relative;
+}
+
+.indented {
+    position: relative;
+    left: 20px;
+}
+
+#returntomenu {
+    margin-top: 20px;
+    width: 90px;
+    height: 20px;
+    padding: 2px;
+    padding-left: 10px;
+    line-height: 20px;
+    border: 2px black solid;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #afa;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+#returntomenu:active {
+    background-color: #9c9;
+}
+
+#status {
+    width: 300px;
+    height: 32px;
+}
+
+.size {
+    float: right;
+    border: 2px black solid;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.size:active {
+    background-color:#888;
+}
+
+#information {
+    font-size: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+#canvas {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.choicebutton {
+    user-select: none;
+    border: 2px black solid;
+    font-size: 30px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: top;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.newlineunlock {
+    user-select: none;
+    border: 2px black solid;
+    font-size: 20px;
+    line-height: 50px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    vertical-align: top;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    background-color: #ba3;
+}
+
+#tooltip {
+    position: fixed;
+    z-index: 5;
+    background-color: #aaa;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding:2px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.lock {
+    cursor: default;
+}
+
+.levelbutton {
+    background-color: #2a2;
+}
+
+.levelbutton:active {
+    background-color: #191;
+}
+
+.unfinishedlevelbutton {
+    background-color: #ab7;
+}
+
+.unfinishedlevelbutton:active {
+    background-color: #777;
+}
+
+.levelpackbutton {
+    background-color: #77a;
+}
+
+.levelpackbutton:active {
+    background-color: #559;
+}
+
