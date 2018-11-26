@@ -193,6 +193,22 @@ drawlevel = function( /*size is the size of each square*/){
 		e = blocks[i];
 		c.fillStyle = colorscheme[e.letter];
 		c.fillRect((e.y+0.05)*size,(e.x+0.05)*size,size*0.9,size*0.9);
+		//now for the hard part -- the four corners, four edges
+		var b,r;
+		b=getsquare(blocks[i].x+1,blocks[i].y);
+		r=getsquare(blocks[i].x,blocks[i].y+1);
+		if (b instanceof Block && b.letter == blocks[i].letter){
+			c.fillRect((e.y+0.05)*size,(e.x+0.95)*size,size*0.9,size*0.1);
+		}
+		if (r instanceof Block && r.letter == blocks[i].letter){
+			c.fillRect((e.y+0.95)*size,(e.x+0.05)*size,size*0.1,size*0.9);
+			if (b instanceof Block && b.letter == blocks[i].letter){
+				var rb = getsquare(blocks[i].x+1,blocks[i].y+1);
+				if (rb instanceof Block && rb.letter == blocks[i].letter){
+					c.fillRect((e.y+0.95)*size,(e.x+0.95)*size,size*0.1,size*0.1);
+				}
+			}
+		}
 	}
 }
 
