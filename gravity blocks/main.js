@@ -170,8 +170,8 @@ loadlevel = function(string){
 
 size = 40;
 colorscheme = new Object()
-letters = ['a','b','c','d','A','B','C','D']
-colors = ['#e11','#1e1','#11e','#cc2','#999','#999','#999','#999']
+letters = ['a','b','c','d',,'e','f','A','B','C','D','E','F','G']
+colors = ['#e11','#1e1','#11e','#cc2','#c2c','#2cc','#999','#999','#999','#999','#999','#999','#999']
 for (var i in letters){
 	colorscheme[letters[i]] = colors[i]
 }
@@ -483,6 +483,18 @@ levels = [{
 #a..b#
 #b.#a#
 ######
+`
+},{
+	id: '006',
+	level: 
+`
+########
+#####bb#
+######b#
+#..ccba#
+#.#c.###
+#....###
+########
 `
 }]
 
