@@ -170,8 +170,8 @@ loadlevel = function(string){
 
 size = 40;
 colorscheme = new Object()
-letters = ['a','b','c','d','e']
-colors = ['#e11','#1e1','11e','cc2','2c2']
+letters = ['a','b','c','d','A','B','C','D']
+colors = ['#e11','#1e1','#11e','#cc2','#999','#999','#999','#999']
 for (var i in letters){
 	colorscheme[letters[i]] = colors[i]
 }
@@ -186,7 +186,7 @@ drawlevel = function( /*size is the size of each square*/){
 	c.beginPath();
 	for (var i in walls){
 		e = walls[i];
-		c.fillStyle = '#444';
+		c.fillStyle = '#222';
 		c.fillRect(e[1]*size,e[0]*size,size,size);
 	}
 	for (var i in blocks){
