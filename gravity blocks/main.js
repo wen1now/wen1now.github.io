@@ -419,7 +419,7 @@ checkunlocks = function(){
 }
 
 levels = [{
-	id: '0000',
+	id: '00000',
 	level:
 `
 #####
