@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<title>Quizzes</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+-->
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$']]}
+});
+</script>
+
+<script type="text/javascript"
+  src="main.js">
+</script>
+</head>
+<body>
+    <h4>Choose a test:</h4>
+    <select id="select" onchange="updatequizinfo()"></select>
+    <button onclick="startquiz()" id='startquiz'>Go -></button>
+    <button onclick="endquiz(true)" id='endquiz' disabled=true>End quiz</button>
+    <b><div id="quizinfo"></div></b>
+    <div id="quizbonusinfo"></div>
+    <div id="time"></div>
+    <div id="main"></div>
+    <script type="text/javascript">
+        setup();
+    </script>
+</body>
+</html>

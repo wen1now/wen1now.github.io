@@ -1,0 +1,17 @@
+body {
+	background-color: #ddd;
+	font-family: sans-serif;
+}
+
+#quizbonusinfo {
+	width: 500px;
+}
+
+#main {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/*
+.answer:hover {
+	color: white;
+}*/
