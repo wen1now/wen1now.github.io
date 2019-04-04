@@ -272,7 +272,7 @@ quizzes = [{
 			answercheck: function(input){
 				arr = input.split(',');
 				if (arr.length==2){
-					return parseInt(51*arr[0]==64*arr[1]+1)
+					return 51*parseInt(arr[0])==64*parseInt(arr[1])+1
 				}
 				return false
 			}
