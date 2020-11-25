@@ -38,7 +38,6 @@
   <button class="colorbox" id="box1" onclick="click_(1)"></button>
   <button class="colorbox" id="box2" onclick="click_(2)"></button>
   <button class="colorbox" id="box3" onclick="click_(3)"></button>
-
   <div id="score">Score: </div>
   <script>
     var points, ready, odd_one_out, played, c1, c2;
@@ -49,12 +48,15 @@
       document.getElementById("color2").value = settings.c2;
       document.getElementById("backgroundcolor").value = settings.bg;
       document.getElementById("whitetext").checked = settings.wt;
+      if (settings.bg != "") {
+        document.body.style.backgroundColor = settings.bg;
+        if (settings.wt) {document.body.style.color = "white";}
+      }
     }
     function go() {
       if (ready)return;
       points = 0;
       played = 0;
-
       document.getElementById("color1").readOnly = true;
       document.getElementById("color2").readOnly = true;
       document.getElementById("backgroundcolor").readOnly = true;
@@ -63,11 +65,8 @@
       var c = document.getElementById("backgroundcolor").value;
       if (c != "") {
         document.body.style.backgroundColor = c;
-        if (document.getElementById("whitetext").checked) {
-          document.body.style.color = "white";
-        }
+        if (document.getElementById("whitetext").checked) {document.body.style.color = "white";}
       }
-
       localStorage.setItem("_color_test_",JSON.stringify({c1:c1,c2:c2,bg:c,wt:document.getElementById("whitetext").checked}))
       setColors();
       ready = true;
