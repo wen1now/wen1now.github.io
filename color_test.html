@@ -38,7 +38,8 @@
   <button class="colorbox" id="box1" onclick="click_(1)"></button>
   <button class="colorbox" id="box2" onclick="click_(2)"></button>
   <button class="colorbox" id="box3" onclick="click_(3)"></button>
-  <div id="score">Score: </div>
+  <div id="score">Score: </div><br>
+  <div id="time">Time: </div>
   <script>
     var points, ready, odd_one_out, played, c1, c2;
     var settings = localStorage.getItem("_color_test_");
@@ -55,8 +56,7 @@
     }
     function go() {
       if (ready)return;
-      points = 0;
-      played = 0;
+      [points, played, time] = [0, 0, 0]
       document.getElementById("color1").readOnly = true;
       document.getElementById("color2").readOnly = true;
       document.getElementById("backgroundcolor").readOnly = true;
@@ -69,30 +69,31 @@
       }
       localStorage.setItem("_color_test_",JSON.stringify({c1:c1,c2:c2,bg:c,wt:document.getElementById("whitetext").checked}))
       setColors();
+      setInterval(tick, 1000);
       ready = true;
     }
     function setColors() {
       odd_one_out = Math.floor(Math.random() * 3) + 1;
-      var doubled_color = Math.floor(Math.random() * 2);
-      if (doubled_color) {
-        [c1, c2] = [c2, c1];
-      }
+      if (Math.floor(Math.random() * 2)) {[c1, c2] = [c2, c1];}
       for (var i = 1; i <= 3; i++) {
         document.getElementById("box" + String(i)).style.backgroundColor = (odd_one_out == i) ? c1 : c2;
       }
     }
     function click_(number) {
       if (!ready)return;
-      if (number == odd_one_out) {
-        points++;
-      }
+      if (number == odd_one_out) {points++;}
       played++;
       setColors();
       updateScore();
     }
     function updateScore() {
-      console.log("here")
       document.getElementById("score").innerHTML = "Score: " + String(points) + "/" + String(played) + " (" + String(Math.round(100 * points/played)) +"%)";
+    }
+    function tick() {
+      time++;
+      minutes = String(Math.floor(time / 60));
+      seconds = time % 60;
+      document.getElementById("time").innerHTML = "Time: " + minutes + ":" + (seconds < 10 ? '0' : '') + String(seconds);
     }
   </script>
 </body>
