@@ -25,6 +25,7 @@
   }
   button {
     outline:none;
+    border:none;
   }
 </style>
 </head>
@@ -49,25 +50,21 @@
       document.getElementById("color2").value = settings.c2;
       document.getElementById("backgroundcolor").value = settings.bg;
       document.getElementById("whitetext").checked = settings.wt;
-      if (settings.bg != "") {
-        document.body.style.backgroundColor = settings.bg;
-        if (settings.wt) {document.body.style.color = "white";}
-      }
+      document.body.style.backgroundColor = (settings.bg == "") ? "white" : settings.bg;
+      if (settings.wt) {document.body.style.color = "white";}
     }
     function go() {
       if (ready)return;
-      [points, played, time] = [0, 0, 0]
+      [points, played, time] = [0, 0, 0];
       document.getElementById("color1").readOnly = true;
       document.getElementById("color2").readOnly = true;
       document.getElementById("backgroundcolor").readOnly = true;
       c1 = document.getElementById("color1").value;
       c2 = document.getElementById("color2").value;
       var c = document.getElementById("backgroundcolor").value;
-      if (c != "") {
-        document.body.style.backgroundColor = c;
-        if (document.getElementById("whitetext").checked) {document.body.style.color = "white";}
-      }
-      localStorage.setItem("_color_test_",JSON.stringify({c1:c1,c2:c2,bg:c,wt:document.getElementById("whitetext").checked}))
+      document.body.style.backgroundColor = (c == "") ? "white" : c;
+      if (document.getElementById("whitetext").checked) {document.body.style.color = "white";}
+      localStorage.setItem("_color_test_",JSON.stringify({c1:c1,c2:c2,bg:c,wt:document.getElementById("whitetext").checked}));
       setColors();
       setInterval(tick, 1000);
       ready = true;
