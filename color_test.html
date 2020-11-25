@@ -3,33 +3,78 @@
 <head>
 <title>color test</title>
 <style>
-
+  #color1 {
+    display:inline-block;
+  }
+  #color2 {
+    display:inline-block;
+    margin: 5px 0px;
+  }
+  #backgroundcolor {
+    display:inline-block;
+  }
+  .colorbox {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    display: inline-block;
+  }
+  #go {
+    display:block;
+    margin:10px 0px;
+  }
+  button {
+    outline:none;
+  }
 </style>
 </head>
 <body>
+  <p>Choose html colors (such as "red" or "#100") for Color 1 and Color 2.<br>Do make them different. Then click "Go!", and click the odd one out.<br>You get a point each time you guess correctly. Refresh the page to reset colors.</p>
+  <label for="color1">Color 1: </label><input id="color1"><br>
+  <label for="color2">Color 2: </label><input id="color2"><br>
+  <label for="backgroundcolor">Background color (optional): </label><input id="backgroundcolor"><br>
+  <label for="whitetext">White text (if dark background): </label><input type="checkbox" id="whitetext">
+  <button onclick="go()" id="go">Go!</button>
+  <button class="colorbox" id="box1" onclick="click_(1)"></button>
+  <button class="colorbox" id="box2" onclick="click_(2)"></button>
+  <button class="colorbox" id="box3" onclick="click_(3)"></button>
 
-  <label for="color1">Color 1:</label><input id="color1">
-  <label for="color2">Color 2:</label><input id="color2">
-  <button onclick="go()">Go!</button>
-  <div class="colorbox" id="box1" onclick="click(1)"></div>
-  <div class="colorbox" id="box2" onclick="click(2)"></div>
-  <div class="colorbox" id="box3" onclick="click(3)"></div>
   <div id="score">Score: </div>
   <script>
-    var points, ready, odd_one_out, played;
+    var points, ready, odd_one_out, played, c1, c2;
+    var settings = localStorage.getItem("_color_test_");
+    if (settings !== null) {
+      settings = JSON.parse(settings);
+      document.getElementById("color1").value = settings.c1;
+      document.getElementById("color2").value = settings.c2;
+      document.getElementById("backgroundcolor").value = settings.bg;
+      document.getElementById("whitetext").checked = settings.wt;
+    }
     function go() {
+      if (ready)return;
       points = 0;
       played = 0;
+
       document.getElementById("color1").readOnly = true;
       document.getElementById("color2").readOnly = true;
+      document.getElementById("backgroundcolor").readOnly = true;
+      c1 = document.getElementById("color1").value;
+      c2 = document.getElementById("color2").value;
+      var c = document.getElementById("backgroundcolor").value;
+      if (c != "") {
+        document.body.style.backgroundColor = c;
+        if (document.getElementById("whitetext").checked) {
+          document.body.style.color = "white";
+        }
+      }
+
+      localStorage.setItem("_color_test_",JSON.stringify({c1:c1,c2:c2,bg:c,wt:document.getElementById("whitetext").checked}))
       setColors();
       ready = true;
     }
     function setColors() {
       odd_one_out = Math.floor(Math.random() * 3) + 1;
       var doubled_color = Math.floor(Math.random() * 2);
-      var c1 = document.getElementById("color1").value;
-      var c2 = document.getElementById("color2").value;
       if (doubled_color) {
         [c1, c2] = [c2, c1];
       }
@@ -37,15 +82,18 @@
         document.getElementById("box" + String(i)).style.backgroundColor = (odd_one_out == i) ? c1 : c2;
       }
     }
-    function click(number) {
+    function click_(number) {
+      if (!ready)return;
       if (number == odd_one_out) {
         points++;
       }
       played++;
+      setColors();
       updateScore();
     }
     function updateScore() {
-      document.getElementById("score").innerHTML = "Score: " + String(points) + "/" + String(played);
+      console.log("here")
+      document.getElementById("score").innerHTML = "Score: " + String(points) + "/" + String(played) + " (" + String(Math.round(100 * points/played)) +"%)";
     }
   </script>
 </body>
