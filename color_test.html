@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<title>color test</title>
+<style>
+
+</style>
+</head>
+<body>
+
+  <label for="color1">Color 1:</label><input id="color1">
+  <label for="color2">Color 2:</label><input id="color2">
+  <button onclick="go()">Go!</button>
+  <div class="colorbox" id="box1" onclick="click(1)"></div>
+  <div class="colorbox" id="box2" onclick="click(2)"></div>
+  <div class="colorbox" id="box3" onclick="click(3)"></div>
+  <div id="score">Score: </div>
+  <script>
+    var points, ready, odd_one_out, played;
+    function go() {
+      points = 0;
+      played = 0;
+      document.getElementById("color1").readOnly = true;
+      document.getElementById("color2").readOnly = true;
+      setColors();
+      ready = true;
+    }
+    function setColors() {
+      odd_one_out = Math.floor(Math.random() * 3) + 1;
+      var doubled_color = Math.floor(Math.random() * 2);
+      var c1 = document.getElementById("color1").value;
+      var c2 = document.getElementById("color2").value;
+      if (doubled_color) {
+        [c1, c2] = [c2, c1];
+      }
+      for (var i = 1; i <= 3; i++) {
+        document.getElementById("box" + String(i)).style.backgroundColor = (odd_one_out == i) ? c1 : c2;
+      }
+    }
+    function click(number) {
+      if (number == odd_one_out) {
+        points++;
+      }
+      played++;
+      updateScore();
+    }
+    function updateScore() {
+      document.getElementById("score").innerHTML = "Score: " + String(points) + "/" + String(played);
+    }
+  </script>
+</body>
+</html>
